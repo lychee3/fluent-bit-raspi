@@ -13,11 +13,11 @@ docker build -t lychee3/fluent-bit-raspi .
 ## running
 
 ```
-docker run --rm -it lychee3/fluent-bit-raspi fluent-bit-raspi -i cpu -o stdout
+docker run --rm -it lychee3/fluent-bit-raspi fluent-bit -i cpu -o stdout
 ```
 
 or 
 
 ```
-docker run --rm -it lychee3/fluent-bit-raspi fluent-bit-raspi -c /conf/fluent.conf
+docker run --rm -it lychee3/fluent-bit-raspi fluent-bit -c /conf/fluent.conf
 ```
