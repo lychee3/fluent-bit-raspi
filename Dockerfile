@@ -1,8 +1,8 @@
 FROM schachr/raspbian-stretch:latest as builder
 
 WORKDIR /tmp
-RUN apt update -y
-RUN apt install -y git build-essential cmake flex bison
+RUN apt -y update
+RUN apt -y install git build-essential cmake flex bison
 RUN git clone https://github.com/fluent/fluent-bit
 
 WORKDIR /tmp/fluent-bit
