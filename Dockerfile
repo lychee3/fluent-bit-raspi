@@ -15,6 +15,8 @@ RUN make install
 
 FROM schachr/raspbian-stretch:latest
 
+RUN apt-get -y update
+RUN apt-get -y install ssl-cert
 RUN mkdir -p /conf
 COPY ./conf/fluent.conf /conf
 COPY --from=builder /usr/local/bin/fluent-bit /usr/local/bin/fluent-bit
