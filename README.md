@@ -25,3 +25,7 @@ docker run --rm -it lychee3/fluent-bit-raspi fluent-bit -c /conf/fluent.conf
 ## Docker Hub
 
 https://hub.docker.com/r/lychee3/fluent-bit-raspi
+
+## version
+v1.3.2
+v1.2.2
