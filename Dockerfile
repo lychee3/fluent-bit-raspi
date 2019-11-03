@@ -6,7 +6,7 @@ RUN apt-get -y install git build-essential cmake flex bison
 RUN git clone https://github.com/fluent/fluent-bit
 
 WORKDIR /tmp/fluent-bit
-RUN git checkout -b work v1.2.2
+RUN git checkout -b work v1.3.2
 
 WORKDIR /tmp/fluent-bit/build
 RUN cmake ..
