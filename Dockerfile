@@ -13,6 +13,7 @@ RUN cmake ..
 RUN make
 RUN make install
 
+
 FROM schachr/raspbian-stretch:latest
 
 RUN apt-get -y update
